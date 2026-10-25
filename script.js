@@ -81,7 +81,7 @@ function buildCard(picture) {
 function buildHome() {
   const gallery = document.querySelector("#gallery");
   gallery.innerHTML = SECTIONS.map(section => `
-    <h2 id="sec-${section.id}">${section.emoji} ${section.title}</h2>
+    <h2 id="sec-${section.id}">${section.emoji ?? ""} ${section.title}</h2>
     <div class="grid">${section.pictures.map(buildCard).join("")}</div>`
   ).join("");
 }

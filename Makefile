@@ -1,4 +1,3 @@
-
 .PHONY: run-server dependencies convert
 
 run-server:
