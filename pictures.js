@@ -1,10 +1,17 @@
 const SECTIONS = [
   {
-    id: "TODO",
-    title: "Titlu - TODO",
-    emoji: "TODO",
+    id: "bubu",
+    title: "Bubu",
     pictures: [
-      { title: "TODO", file: "img/categorie/TODO.svg" },
+      { title: "Bubu", file: "img/bubu/bubu-01.svg" },
     ],
   },
+  // {
+  //   id: "TODO",
+  //   title: "Titlu - TODO",
+  //   emoji: "TODO",
+  //   pictures: [
+  //     { title: "TODO", file: "img/categorie/TODO.svg" },
+  //   ],
+  // },
 ];
