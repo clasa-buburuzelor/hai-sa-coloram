@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hai să colorăm!</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Home view: list of available pictures -->
+  <section id="home">
+    <header class="hero">
+      <h1>Hai să colorăm!</h1>
+      <p>Alege un desen și colorează-l cu culorile tale preferate! 🎨</p>
+    </header>
+
+    <main id="gallery"></main>
+  </section>
+
+  <!-- Paint view: one picture + palette -->
+  <section id="paint" hidden>
+    <div class="topbar">
+      <button id="back-btn" class="big-btn back" aria-label="Înapoi la desene">⬅ Înapoi</button>
+      <h2 id="picture-title"></h2>
+      <button id="reset-btn" class="big-btn reset" aria-label="Șterge toate culorile">🗑 De la capăt</button>
+    </div>
+
+    <div class="stage">
+      <div id="canvas-wrap">
+        <canvas id="canvas"></canvas>
+        <img id="outline" alt="">
+      </div>
+    </div>
+
+    <div class="palette-bar">
+      <div id="current-color" title="Culoarea aleasă"></div>
+      <div id="palette"></div>
+      <label class="rainbow" title="Adaugă o culoare nouă">
+        <input type="color" id="color-picker">
+        <span>+</span>
+      </label>
+    </div>
+  </section>
+
+  <script src="pictures.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
